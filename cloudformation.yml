@@ -1,0 +1,12 @@
+Parameters:
+  x:
+    Type: String
+    Description: This is variable for InstanceType
+
+Resources:
+  MyfirstOsByCloudFormation:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0915bcb5fa77e4892
+      InstanceType: !Ref x
+      AvailabilityZone: us-east-1a
